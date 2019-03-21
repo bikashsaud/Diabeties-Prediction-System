@@ -1,0 +1,122 @@
+{% extends 'master/base.html'%}
+{% block body %}
+<br>
+<div class="row" style="background-color:lime; height:60px; color: white;">
+<h1 align="center">{{result}}</h1>
+</div>
+<br>
+<div class="row" style="padding-top:-50px;">
+  <div class="container">
+    <div class="col-md-12">
+      <div>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active">
+            <a href="#home" aria-controls="home" role="tab" data-toggle="tab">
+              <li class="action-button animate blue body" style="color:white">Diabetes</li>
+            </a>
+          </li>
+          <!--
+          <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
+            <li class="action-button animate blue body">Symptoms</li>
+            </a>
+        </li>-->
+          <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">
+            <lxi class="action-button animate blue body">Treatment</li>
+          </a></li>
+          <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">
+            <li class="action-button animate blue body">Causes</li></a></li>
+            <li role="presentation"><a href="#image" aria-controls="image" role="tab" data-toggle="tab">
+              <li class="action-button animate blue body">Images</li></a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content" style="padding-left:50px">
+              <div role="tabpanel" class="tab-pane active" id="home">
+                <h3>What is diabetes?</h3>
+                Diabetes is a disease that affects your body’s ability to produce or use insulin.
+                Insulin is a hormone. When your body turns the food you eat into energy
+                (also called sugar or glucose), insulin is released to help transport this
+                energy to the cells. Insulin acts as a “key.” Its chemical message tells the
+                cell to open and receive glucose. If you produce little or no insulin, or are insulin resistant,
+                too much sugar remains in your blood. Blood glucose levels are higher than normal for individuals
+                with diabetes. There are two main types of diabetes: Type 1 and Type 2.
+                <div class="container">
+
+                  <div class="col-md-6">
+                    <h3>Type 1 Diabetes</h3>
+                    When you are affected with Type 1 diabetes, your pancreas does not produce insulin.
+                    Type 1 diabetes is also called juvenile diabetes, since it is often diagnosed in children or teens.
+                    This type accounts for 5-10 percent of people with diabetes.
+                  </div>
+                    <div class="col-md-6">
+                      <br>
+
+                      <img src="img/type1.jpg" alt="">
+
+                    </div>
+
+
+                  <div class="col-md-6">
+
+                    <h3>Type 2 Diabetes</h3>
+                    Type 2 diabetes occurs when the body does not produce enough insulin,
+                    or when the cells are unable to use insulin properly, which is called insulin resistance.
+                    Type 2 diabetes is commonly called “adult-onset diabetes” since it is diagnosed later in life
+                    , generally after the age of 45. 90-95 percent of people with diabetes have this type.
+                    In recent years Type 2 diabetes has been diagnosed in younger people, including children,
+                    more frequently than in the past.
+
+                  </div>
+                  <div class="col-md-6">
+                    <br>
+                    <br>
+                    <img src="img/type2.jpg" alt="">
+                  </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="profile"></div>
+                <div role="tabpanel" class="tab-pane" id="messages">
+                  The major goal in treating type 1 and type 2 diabetes is to control blood sugar (glucose) levels within the normal range, with minimal excursions to low or high levels.
+
+                  <br>Type 1 diabetes is treated with:
+<br>
+1. insulin,<br>
+2. Exercise,<br>
+<h3>Diet for Diabetes Type 1</h3><br>
+
+.......
+<br>
+Type 2 diabetes is treated:
+<br>
+1. First with weight reduction
+2. Exercise
+<br><h3>Diet For Diabetes Type 2</h3> <br>
+  1. Type 2 diabetes involves problems getting enough glucose into the cells. When the sugar can't get where it is supposed to be, it leads to elevated blood sugar levels in the bloodstream, which can lead to complications such as kidney, nerve, and eye damage, and cardiovascular disease.<br>
+<br>  2. Foods to eat for a type 2 diabetic diet include complex carbohydrates such as brown rice, whole wheat, quinoa, oatmeal, fruits, vegetables, beans, and lentils. Foods to avoid include simple carbohydrates, which are processed, such as sugar, pasta, white bread, flour, and cookies, pastries.<br>
+  <br>3. Foods with a low glycemic load (index) only cause a modest rise in blood sugar and are better choices for people with diabetes. Good glycemic control can help in preventing long-term complications of type 2 diabetes.<br>
+  <br>4. Fats don't have much of a direct effect on blood sugar but they can be useful in slowing the absorption of carbohydrates.<br>
+<br>  5. Protein provides steady energy with little effect on blood sugar. It keeps blood sugar stable, and can help with sugar cravings and feeling full after eating. Protein-packed foods to eat include beans, legumes, eggs, seafood, dairy, peas, tofu, and lean meats and poultry.<br>
+  <br>6.  Five diabetes "superfoods" to eat include chia seeds, wild salmon, white balsamic vinegar, cinnamon, and lentils.<br>
+<br>  7. Healthy diabetes meal plans include plenty of vegetables, and limited processed sugars and red meat.
+                </div>
+                <div role="tabpanel" class="tab-pane" id="settings">
+
+                  <h4>What causes type 1 diabetes?</h4>
+                  Type 1 diabetes occurs when your immune system, the body’s system for fighting infection, attacks and destroys the insulin-producing beta cells of the pancreas. Scientists think type 1 diabetes is caused by genes and environmental factors, such as viruses, that might trigger the disease. Studies such as TrialNet  are working to pinpoint causes of type 1 diabetes and possible ways to prevent or slow the disease.
+
+                  <h4>What causes type 2 diabetes?</h4>
+                  Type 2 diabetes—the most common form of diabetes—is caused by several factors, including lifestyle factors and genes.
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="image">...</div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+{% endblock %}

@@ -1,0 +1,12 @@
+
+#take care of missing values(Also deete this becouse it is not used future)
+"""from sklearn.preprocessing import Imputer
+imputer=Imputer(missing_values='NaN',strategy='mean',axis=0)
+X[:, 0:7]=imputer.fit(X[:, 0:7])
+X[:, 0:7]=imputer.transform(X[:, 0:7])
+
+#Encoding categorical data
+from sklearn.preprocessing import LabelEncoder
+labelencoder_X=LabelEncoder()
+X[:, 0:7]=labelencoder_X.fit_transform(X[:, 0:7])"""
+

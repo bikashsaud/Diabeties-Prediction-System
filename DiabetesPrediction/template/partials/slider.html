@@ -1,0 +1,23 @@
+{% load staticfiles %}
+<!--slider begin-->
+
+    <!--  <section class="slider-holder">-->
+
+
+      <!--<div class="flexslider carousel">-->
+        <ul class='slides'>
+          {% for s in slider %}
+        <li>
+          <img src="{{MEDIA_URL}}{{s.image.url}}" alt=""/>
+
+        </li>
+        {% endfor %}
+        </ul>
+
+
+
+         <!--
+      </div>
+
+ Slider end
+ -->

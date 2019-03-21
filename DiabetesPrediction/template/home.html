@@ -1,0 +1,155 @@
+
+{% extends 'master/base.html' %}
+
+ {% block body %}
+
+
+ 	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner">
+ 		<div class="overlay"></div>
+ 		<div class="container">
+ 			<div class="row">
+ 				<div class="col-md-10 col-md-offset-2 text-center">
+ 					<div class="display-t js-fullheight">
+ 						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
+ 							<h1>Diabetes Prediction System <br></h1>
+ 							<h2></h2>
+ 							<p><a class="btn btn-primary btn-lg btn-demo" href="{% url 'check' %}"></i> Go for Check</a> <!--<a class="btn btn-primary btn-lg btn-learn" href='#'>Learn More...</a></p>-->
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</header>
+
+ <div class="row" style='padding-top:-60px'>
+   <div class="container">
+     <div class="col-md-6">
+       <div class="caption">
+         <h1  style="font-family:impact;">Diabetes</h1>
+         <p  style="font-family:arial; font-size:14px;">Diabetes is a disease that occurs when your blood glucose, also called blood sugar,
+           is too high. Blood glucose is your main source of energy and comes from the food you eat.
+           Insulin, a hormone made by the pancreas, helps glucose from food get into your cells to be used for energy.
+           Sometimes your body doesn’t make enough—or any—insulin or doesn’t use insulin well.
+           Glucose then stays in your blood and doesn’t reach your cells.
+         </p>
+         <p  style="font-family:arial; font-size:14px;">
+           Diabetes, often referred to by doctors as diabetes mellitus, describes a group of metabolic
+           diseases in which the person has high blood glucose (blood sugar),
+           either because insulin production is inadequate,
+           or because the body's cells do not respond properly to insulin, or both.
+         </p>
+         <p><a href="https://www.medicalnewstoday.com/info/diabetes" class="btn btn-primary" role="button">More..</a></p>
+
+     </div>
+   </div>
+   <div class="col-md-6">
+     {% load staticfiles %}
+     <img style='padding-top:60px;' src="{% static 'images/s11.png' %}" alt="">
+   </div>
+
+{% csrf_token %}
+</div>
+ </div>
+
+ </div>
+
+
+ <div class="rows">
+   <div class="container">
+     <div >
+     <h2 class="col-md-12" style="font-family:impac; background-color:; color:;">
+       <u>Main Symptoms of Diabetes</u>
+     </h2>
+     <br><h4>1.Friquent Urination</h4>
+     <div class="row">
+       <div class="container">
+         <div class="col-md-5">
+           {% load staticfiles %}
+           <img style='padding-top:-100px; height:200px; width:250px; padding-left:00px;' src="{% static 'images/fu.jpg' %}" alt="">
+         </div>
+         <div class="col-md-7">
+           you been going to the bathroom to urinate more often recently?
+              Do you notice that you spend most of the day going to the toilet?
+              When there is too much glucose (sugar) in your blood you will urinate more often.
+         </div>
+       </div>
+
+     </div>
+
+     <br><h4>2.Intense Hunger</h4>
+     <div class="row">
+       <div class="container">
+         <div class="col-md-5">
+           {% load staticfiles %}
+           <img style='padding-top:-100px; height:200px; width:250px;' src="{% static 'images/ih.jpg' %}" alt="">
+         </div>
+         <div class="col-md-7">
+
+            As the insulin in your blood is not working properly, or is not there at all,
+
+            and your cells are not getting their energy, your body may
+             react by trying to find more energy - food. You will become hungry.
+         </div>
+       </div>
+
+     </div>
+
+     <br><h4>3. Unusual Weight Loss</h4>
+     <div class="row">
+       <div class="container">
+         <div class="col-md-5">
+           {% load staticfiles %}
+           <img style='padding-top:-100px; height:200px; width:250px;' src="{% static 'images/wl.jpg' %}" alt="">
+         </div>
+         <div class="col-md-7">
+           This is more common among people with Diabetes Type 1. As your body is not
+            making insulin it will seek out another energy source (the cells aren't getting glucose).
+             Muscle tissue and fat will be broken down for energy.
+         </div>
+       </div>
+
+     </div>
+
+     <br><h4>4. Itchy Skin</h4>
+     <div class="row">
+       <div class="container">
+         <div class="col-md-5">
+           {% load staticfiles %}
+           <img style='padding-top:-100px; height:200px; width:250px;' src="{% static 'images/si.jpg' %}" alt="">
+         </div>
+         <div class="col-md-7">
+
+         </div>
+       </div>
+
+     </div>
+
+
+          <br><h4>5. Increased Fatigue</h4>
+          <div class="row">
+            <div class="container">
+              <div class="col-md-5">
+                {% load staticfiles %}
+                <img style='padding-top:-100px; height:200px; width:250px;' src="{% static 'images/if.jpg' %}" alt="">
+              </div>
+              <div class="col-md-7">
+                If your insulin is not working properly, or is not there at all,
+                 glucose will not be entering your cells and providing them with energy.
+
+                  This will make you feel tired and listless.
+              </div>
+            </div>
+
+          </div>
+<br>
+
+       <h4>Other Symptoms</h4>
+       <h4><i><b>Irritability,Blurred vision,Frequent gum disease,Sexual dysfunction among men</b></i></h4>
+     </div>
+
+   </div>
+ </div>
+             <p><a class="btn btn-primary btn-lg btn-demo" href="{% url 'check' %}"  style="padding=left:200px;"></i> Chech Check</a>
+
+
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends 'master/base.html' %}
+<style media="screen">
+
+</style>
+{% block body %}
+<--
+<!--form for input data tested-->
+<form class="" action="{% url 'check' %}" method="post" name='result' style="background-color:green;">
+
+<div class='login'>
+  <h4 class="hr">Enter Different Test Results</h4>
+No. of Pregnancy: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input name='preg' placeholder='0-10' type='number' min=0 max=10 ><br>
+Glucose:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input name='glucose' placeholder='(10-200mg/dl )' type='number' min=10 max=200><br>
+  Blood Pressure:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input name='bp' placeholder='(20-250mmHg)' type='number' min=20 max=250><br>
+  SkinThickness:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input name='st' placeholder='(1-50 mm)' type='number' min=1 max=50><br>
+  Insuline:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input name='insulin' placeholder='(0-200 mu U/ml)' type='number' min=0 max=200><br>
+  Body Mass Index:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input name='bim' placeholder='BMI(0-90 kg/in**2)' type='number' min=0 max=150><br>
+  DiabetesPredictionFunction:
+  <input name='dpf' placeholder='0-1.5' type='number' min=0.0 max=3><br>
+  Age Year:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input name='age' placeholder='(5-90 year)' type='number' min=5 max=90><br>
+
+
+<br>
+
+{% csrf_token %}
+
+  <br>
+  <input class='animated' type='submit' value='Check Result' name="submit">
+
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+</form>
+
+{%  endblock %}
